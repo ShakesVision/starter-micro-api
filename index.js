@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
         const statusCode = r.statusCode;
         res.write("Status: " + statusCode);
     }).on("error", (error) => {
-        res.write(500);
+        res.write("500");
         res.sendStatus(500)
         console.log(error);
     });
