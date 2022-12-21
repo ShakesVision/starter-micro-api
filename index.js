@@ -10,6 +10,5 @@ http.createServer(function (req, res) {
         res.sendStatus(500)
         console.log(error);
     });
-    res.write('\nYo!');
     res.end();
 }).listen(process.env.PORT || 3000);
